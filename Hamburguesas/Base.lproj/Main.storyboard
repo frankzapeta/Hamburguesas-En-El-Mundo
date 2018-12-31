@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me9-r8-cBi">
+                                <rect key="frame" x="167" y="30.5" width="41" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1O-lv-dtK">
+                                <rect key="frame" x="30" y="377" width="315" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="z1Q-R3-Z6L"/>
+                                </constraints>
+                                <state key="normal" title="Quiero Una Hamburguesa "/>
+                                <connections>
+                                    <action selector="CambiarHamburguesaPais:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zX-RA-j10"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsz-WA-gfb">
+                                <rect key="frame" x="118" y="227.5" width="139" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCU-L7-3tD">
+                                <rect key="frame" x="44" y="85" width="301" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="jg2-a6-Cfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clg-vZ-qiP">
+                                <rect key="frame" x="30" y="271" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n5H-Ae-zoU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2Ob-Fr-gMg"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Clg-vZ-qiP" secondAttribute="leading" id="5Xa-WB-3Si"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="trailing" secondItem="qCU-L7-3tD" secondAttribute="trailing" id="7tG-zW-YI4"/>
+                            <constraint firstItem="qCU-L7-3tD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="85" id="9qN-i7-qXj"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="trailing" secondItem="Clg-vZ-qiP" secondAttribute="trailing" id="Dbk-Cu-ZdM"/>
+                            <constraint firstItem="qCU-L7-3tD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="Grm-oj-vUW"/>
+                            <constraint firstItem="Clg-vZ-qiP" firstAttribute="top" secondItem="Gsz-WA-gfb" secondAttribute="bottom" constant="18" id="Hag-bb-cEO"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="centerX" secondItem="Me9-r8-cBi" secondAttribute="centerX" id="QAj-ct-RgQ"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="top" secondItem="Clg-vZ-qiP" secondAttribute="bottom" constant="66" id="QGy-9S-lg9"/>
+                            <constraint firstItem="qCU-L7-3tD" firstAttribute="top" secondItem="Me9-r8-cBi" secondAttribute="bottom" constant="29" id="WfJ-T9-rxq"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="centerX" secondItem="Gsz-WA-gfb" secondAttribute="centerX" id="aji-sI-mbq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S1O-lv-dtK" secondAttribute="bottom" constant="247" id="n26-Wz-bRg"/>
+                            <constraint firstItem="S1O-lv-dtK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oxz-Vr-X1b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelHamburguesa" destination="Clg-vZ-qiP" id="ZQd-LJ-BEE"/>
+                        <outlet property="labelPais" destination="qCU-L7-3tD" id="fRi-Ln-NpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
